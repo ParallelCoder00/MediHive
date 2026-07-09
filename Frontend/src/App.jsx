@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import Navbar from "./Components/Navbar"
+import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
+import Footer from "./Components/Footer"
+import Home from "./Pages/Home"
+import Topbar from "./Components/Topbar"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className='text-red-600'>Hey frontend</h1>
-    </>
+    <Router>
+      <Topbar/>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+        </Routes>
+      <Footer/>
+    </Router>
   )
 }
 
