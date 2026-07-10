@@ -7,7 +7,7 @@ import { ShieldHalf } from 'lucide-react'
 
 function Hero() {
   return (
-    <section className="w-full h-100 bg-linear-to-r from-white to-[#f3e4ce] flex items-center">      
+    <section className="w-full h-100 bg-linear-to-b from-[#f3e4ce] to-white flex items-center">      
       <div className="max-w-7xl flex flex-col gap-5 mx-auto ">
         <h2 className="flex font-medium w-max px-2 gap-3 rounded-full bg-[#e5d2b2]">
           {" "}

@@ -1,11 +1,13 @@
 import React from 'react'
-import categories from '../../category.js'
 
 function Categorycard({category}) {
+  const Icon = category.icon
   return (
-    <div className='w-70 h-70 '>
-        <img className='w-20 h-20 bg-green-300 opacity-40' src={category.image} alt={categories.title} />
-        <h2>{category.title}</h2>
+    <div className='w-50 h-35 rounded-3xl bg-[#faf2ebb5] flex flex-col items-center justify-center gap-3 '>
+      <div className='p-3 rounded-[100%] bg-green-300/10'>
+        {Icon && <Icon size={25} className='text-green-800'/>}
+        </div>
+        <h2 className='font-semibold'>{category.title}</h2>
     </div>
   )
 }
