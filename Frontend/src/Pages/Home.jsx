@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import MiddleBar from '../Components/MiddleBar'
 import Categories from '../Components/Categories'
 import TopPicks from '../Components/TopPicks'
+import Testimonials from '../Components/Testimonials'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <MiddleBar/>
       <Categories/>
       <TopPicks/>
+      <Testimonials/>
     </div>
   )
 }

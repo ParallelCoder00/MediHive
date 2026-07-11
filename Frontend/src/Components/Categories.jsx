@@ -1,11 +1,11 @@
 import React from "react";
-import category from "../../category";
+import category from "../Data/category";
 import Categorycard from "./Categorycard";
 import { MoveRight } from "lucide-react";
 
 function Categories() {
   return (
-    <section className="max-w-7xl mx-auto mt-7 flex flex-col justify-center gap-8">
+    <section className="max-w-7xl mx-auto mt-12 flex flex-col justify-center gap-8">
       <div>
         <h3 className="text-xs font-semibold tracking-wider text-zinc-600">
           BROWSE BY CATEGORY

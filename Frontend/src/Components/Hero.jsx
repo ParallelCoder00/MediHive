@@ -18,7 +18,7 @@ function Hero() {
           <span className="text-green-800">Priority</span>{" "}
         </h1>
         <h2>
-          Order medicines onine with ease and get them <br /> delivered fast at
+          Order medicines online with ease and get them <br /> delivered fast at
           your doorstep.
         </h2>
         <div className="relative w-120">

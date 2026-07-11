@@ -3,7 +3,7 @@ import React from 'react'
 
 function ProductCard({product}) {
   return (
-    <div className='w-64 rounded-lg border-2 border-zinc-200 bg-white p-4 shadow-sm shadow-black transition duration-300 ease-in-out transform-gpu hover:-translate-y-1 hover:border-green-500 hover:shadow-md'>
+    <div className='w-64 rounded-lg border-2 border-zinc-200 bg-white p-4 shadow-sm shadow-black transition duration-300 ease-in-out transform-gpu hover:-translate-y-0.5 hover:border-green-500 hover:shadow-md'>
         <nav className='flex items-center justify-between'>
             <div className='rounded-full bg-green-950 px-3 py-1'>
                 <h2 className='text-[10px] font-semibold text-white'>20% OFF</h2>
@@ -11,11 +11,12 @@ function ProductCard({product}) {
             <Heart size={18} className='cursor-pointer text-zinc-600 hover:text-red-500'/>
         </nav>
 
-        <div className='mt-4 flex h-32 w-full items-center justify-center rounded-md '>
+        <div className='relative mt-4 flex h-32 w-full items-end justify-center pb-3 rounded-md'>
+            <span aria-hidden='true' className='absolute bottom-4 h-3 w-28 rounded-full bg-zinc-900/50 blur-md' />
             <img
               src={product.image}
               alt={product.name}
-              className='max-h-40 max-w-40 cursor-pointer object-contain transition-transform duration-500 ease-in-out hover:scale-105'
+              className='relative z-10 max-h-28 max-w-40 cursor-pointer object-contain transition-transform duration-500 ease-in-out hover:scale-105'
             />
         </div>
 
