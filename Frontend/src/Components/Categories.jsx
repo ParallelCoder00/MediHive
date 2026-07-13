@@ -11,7 +11,7 @@ function Categories() {
           BROWSE BY CATEGORY
         </h3>
         <h1 className="text-2xl font-bold text-green-950">Shop By Category</h1>
-        <h3 className="flex group ml-270 justify-center -mt-6 rounded-full cursor-pointer bg-green-100 border border-green-800 text-green-950 font-semibold text-[13px]">
+        <h3 className="flex group ml-270 justify-center items-center -mt-6 rounded-full cursor-pointer bg-green-100 border border-green-800 text-green-950 font-semibold text-[13px]">
           View all categories
           <MoveRight
             size={20}

@@ -16,25 +16,25 @@ function Navbar() {
             <h1 className="font-bold text-xl text-center mt-2.5 tracking-wider text-green-950">
               MediHive
             </h1>
-            <h4 className="text-xs tracking-tighter font-medium text-zinc-600">
+            <h4 className="text-xs tracking-tight font-medium  text-zinc-600">
               Your Health, Our Priority
             </h4>
           </div>
         </div>
-        <ul className="max-w-7xl mx-auto flex gap-2 font-semibold text-md">
-          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline">
+        <ul className="max-w-7xl mx-auto flex gap-2 font-light text-md">
+          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline hover:underline-offset-2">
             Home
           </li>
-          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline">
+          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline hover:underline-offset-2">
             Medicines
           </li>
-          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline">
+          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline hover:underline-offset-2">
             Categories
           </li>
-          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline">
+          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline hover:underline-offset-2">
             About Us
           </li>
-          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline">
+          <li className="cursor-pointer px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full hover:underline hover:underline-offset-2">
             ContactUs
           </li>
         </ul>
@@ -45,14 +45,14 @@ function Navbar() {
               className="absolute cursor-pointer text-gray-700 top-2 right-3"
             />
             <input
-              className="border-2 border-zinc-400 outline-0 text-zinc-600 focus:border-green-800 bg-white rounded-full px-8 py-1 font-semibold "
+              className="border border-zinc-400 outline-0 text-zinc-600 focus:border-green-800 bg-white rounded-full px-8 py-1 "
               type="text"
               placeholder="Search medicines..."
             />
           </div>
           <div className="flex items-center px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full cursor-pointer  gap-1">
-            <ShoppingCart size={20} />
-            <h3 className="font-semibold text-md">Cart</h3>
+            <ShoppingCart size={20} className="fill-green-800 text-green-900"/>
+            <h3 className="font-medium text-md">Cart</h3>
           </div>
           <div className="relative">
             {/* Account */}
@@ -60,8 +60,8 @@ function Navbar() {
               onClick={() => setOpen(!open)}
               className="flex items-center px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full cursor-pointer  gap-1"
             >
-              <User size={20} />
-              <h3 className="font-semibold">Account</h3>
+              <User size={20} className="fill-green-800 text-green-900"/>
+              <h3 className="font-medium">Account</h3>
               <ChevronUp
                 size={20}
                 className={`mt-1 text-black transition-transform duration-300 ${

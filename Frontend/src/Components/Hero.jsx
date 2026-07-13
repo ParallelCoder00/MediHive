@@ -13,7 +13,7 @@ function Hero() {
           {" "}
           <Heart className="text-green-800" /> Trusted by 10,000+ customers
         </h2>
-        <h1 className="text-6xl font-semibold">
+        <h1 className="text-6xl heading-font tracking-wider font-semibold">
           Your Health, <br /> Our{" "}
           <span className="text-green-800">Priority</span>{" "}
         </h1>
