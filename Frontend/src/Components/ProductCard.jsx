@@ -22,7 +22,7 @@ function ProductCard({product}) {
             <img
               src={product.image}
               alt={product.name}
-              className='relative z-10 max-h-28 max-w-40 cursor-pointer object-contain transition-transform duration-500 ease-in-out hover:scale-105'
+              className='relative z-10 max-h-34 mt-10 w-45 cursor-pointer transition-transform duration-500 ease-out object-contain hover:scale-108'
             />
         </div>
 

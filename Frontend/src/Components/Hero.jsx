@@ -7,8 +7,8 @@ import { ShieldHalf } from 'lucide-react'
 
 function Hero() {
   return (
-    <section className="w-full h-100 bg-linear-to-b from-[#f3e4ce] to-white flex items-center">      
-      <div className="max-w-7xl flex flex-col gap-5 mx-auto ">
+    <section className="w-full h-100 bg-linear-to-b from-[#f3e4ce] to-white flex items-center ">      
+      <div className="max-w-7xl ml-38 flex flex-col gap-5 ">
         <h2 className="flex font-medium w-max px-2 gap-3 rounded-full bg-[#e5d2b2]">
           {" "}
           <Heart className="text-green-800" /> Trusted by 10,000+ customers
@@ -39,7 +39,7 @@ function Hero() {
           <h3 className="flex gap-2"> <ShieldHalf size={22} className="text-green-900"/> Secure Payment</h3>
         </div>
       </div>
-      <img src="../Public/Doctor_png.png" className="object-cover mr-10 max-w-7xl h-110"/>
+      <img src="../Public/doctorImage.png" className="object-cover max-w-7xl mx-auto h-108"/>
     </section>
   );
 }

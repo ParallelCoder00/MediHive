@@ -27,7 +27,7 @@ function Products() {
 
   return (
     <main className="">
-      <section className="flex justify-between px-28 items-center h-55 bg-linear-to-b from-[#f5e8d3] to-white">
+      <section className="flex justify-between px-28 items-center h-55 bg-linear-to-b from-[#f5e8d3] to-white" >
         <div className=" px-6 ">
           <nav aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-sm font-medium text-zinc-600">
@@ -49,10 +49,10 @@ function Products() {
               
             </ol>
           </nav>
-          <h1 className="heading-font tracking-wide mt-3 text-4xl text-green-950 mb-2">All Products</h1>
+          <h1 className="heading-font tracking-wide mt-3 text-6xl text-green-950 mb-2">All Products</h1>
           <p className="text-zinc-800 font-extralight text-sm">Find the best medicines & healthcare for you</p>
         </div>
-        <img className="w-90 h-60 object-cover mt-4" src="../Public/productImage.png" alt="" />
+        <img className="w-215 h-57 object-cover mt-4" src="../Public/producpageimage.png" alt="" />
       </section>
       <ProductBar/>
       <div className="flex p-2 mt-5 max-w-7xl mx-auto list-none justify-around">
@@ -69,7 +69,7 @@ function Products() {
           </li>
         ))}
       </div>
-      <section className="grid max-w-7xl mx-auto grid-cols-1 justify-items-center gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="grid max-w-7xl mx-auto grid-cols-1 justify-items-center rounded-2xl gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" style={{backgroundImage: "url('/Public/productpage.jpg')"}} >
         {dummyProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

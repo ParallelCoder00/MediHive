@@ -11,7 +11,7 @@ function Navbar() {
     <div className=" sticky top-0 z-50 shadow-md shadow-balck backdrop-blur-md bg-[#F5E8D3]/70">
       <div className="flex h-15 max-w-7xl mx-auto items-center">
         <div className="flex cursor-pointer">
-          <img src="./Public/Png_logo.png" className="h-17 w-17" />
+          <img src="/Mainlogo.png" className="h-17 w-17" />
           <div className="-ml-2">
             <h1 className="font-bold text-xl text-center mt-2.5 tracking-wider text-green-950">
               MediHive

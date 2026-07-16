@@ -63,7 +63,7 @@ function ProductBar() {
                   role="option"
                   aria-selected={sortBy === option}
                   onClick={() => selectSort(option)}
-                  className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+                  className={`flex  w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm transition-colors ${
                     sortBy === option
                       ? "bg-green-50 font-medium text-green-900"
                       : "text-zinc-700 hover:bg-zinc-100"
