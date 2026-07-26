@@ -1,11 +1,16 @@
-import React from 'react'
 import product from '../Data/product'
 import ProductCard from './ProductCard'
 import { MoveRight } from 'lucide-react'
 
 function TopPicks() { 
   return (
-    <section className='max-w-7xl mt-12 bg-linear-to-b rounded-4xl from-[#f3e4ce] to-white p-5 mx-auto object-cover' style={{backgroundImage: "url('https://img.magnific.com/free-photo/spring-floral-border-background-green-with-leaf-watercolor-illustration_53876-126807.jpg?semt=ais_hybrid&w=740&q=80')"}}>
+    <section
+      className='max-w-7xl mt-12 bg-linear-to-b rounded-4xl from-[#f3e4ce] to-white p-5 mx-auto object-cover'
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://img.magnific.com/free-photo/spring-floral-border-background-green-with-leaf-watercolor-illustration_53876-126807.jpg?semt=ais_hybrid&w=740&q=80')",
+      }}
+    >
       <div className='mb-5'>
         <h3 className='text-xs tracking-wider font-semibold text-zinc-700'>FEATURED MEDICINES</h3>
         <h2 className='text-2xl font-bold text-green-950'>Top Picks For You</h2>

@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Categorycard({category}) {
   const Icon = category.icon

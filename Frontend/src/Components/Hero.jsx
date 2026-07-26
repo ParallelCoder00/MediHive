@@ -1,4 +1,3 @@
-import React from "react";
 import { Heart } from "lucide-react";
 import { Search } from "lucide-react";
 import { BriefcaseMedical } from 'lucide-react'

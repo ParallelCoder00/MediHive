@@ -5,11 +5,26 @@ body {
   background: linear-gradient(
     to top,
     #f6f2ea 0%,
-    #fff 40%,
+    #fff 15%,
     transparent 100%
   );
 }
 
 .heading-font {
   font-family: "DM Serif Display", serif;
+}
+
+.cart-items-scroll {
+  max-height: 660px;
+  scrollbar-width: thin;
+  scrollbar-color: #b8aa96 transparent;
+}
+
+.cart-items-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #b8aa96;
 }

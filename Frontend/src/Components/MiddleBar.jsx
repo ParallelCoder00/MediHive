@@ -1,4 +1,3 @@
-import React from 'react'
 import { Truck } from 'lucide-react'
 import { WalletCards } from 'lucide-react'
 import { Undo2 } from 'lucide-react'

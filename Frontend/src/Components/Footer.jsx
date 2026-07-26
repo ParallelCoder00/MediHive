@@ -1,6 +1,5 @@
 import { Phone, Pin, Mail } from 'lucide-react'
 import {FaInstagram, FaFacebook , FaWhatsapp, FaXTwitter} from "react-icons/fa6"
-import React from 'react'
 
 function Footer() {
   return (

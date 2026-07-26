@@ -1,7 +1,8 @@
 import { Heart, IndianRupee, ShoppingCart } from 'lucide-react'
-import React from 'react'
+import { useCart } from "../Hooks/useCart";
 
 function ProductCard({product}) {
+  const { addToCart } = useCart();
   const discountPercentage = 20;
   const originalPrice = product.oldPrice ?? product.price;
   const discountedPrice = product.oldPrice
@@ -42,7 +43,7 @@ function ProductCard({product}) {
             <h3 className='text-sm'>{originalPrice}</h3>
             </div>
           </div>
-            <button className='flex h-9 w-9 items-center justify-center rounded-full bg-green-950 text-white transition hover:bg-green-700'>
+            <button type="button" onClick={() => addToCart(product)} aria-label={`Add ${product.name} to cart`} className='flex h-9 w-9 items-center justify-center rounded-full bg-green-950 text-white transition hover:bg-green-700'>
               <ShoppingCart size={17} className='cursor-pointer'/>
             </button>
         </div>

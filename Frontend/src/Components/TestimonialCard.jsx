@@ -1,5 +1,4 @@
 import { BadgeCheck, Quote, Star } from "lucide-react";
-import React from "react";
 
 function TestimonialCard({ testimonials }) {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import category from "../Data/category";
 import Categorycard from "./Categorycard";
 import { MoveRight } from "lucide-react";

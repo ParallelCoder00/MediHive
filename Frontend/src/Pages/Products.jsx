@@ -69,7 +69,13 @@ function Products() {
           </li>
         ))}
       </div>
-      <section className="grid max-w-7xl mx-auto grid-cols-1 justify-items-center rounded-2xl gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" style={{backgroundImage: "url('/Public/productpage.jpg')"}} >
+      <section
+        className="grid max-w-7xl mx-auto grid-cols-1 justify-items-center rounded-2xl gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url('/productpage.jpg')",
+        }}
+      >
         {dummyProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

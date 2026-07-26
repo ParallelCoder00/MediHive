@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import { CarTaxiFront, Search } from "lucide-react";
+import { useState } from "react";
+import { Search } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 import { User } from "lucide-react";
-import { ChevronDown } from "lucide-react";
 import { ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useCart } from "../Hooks/useCart";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const { cart } = useCart();
+  const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
   return (
     <div className=" sticky top-0 z-50 shadow-md shadow-balck backdrop-blur-md bg-[#F5E8D3]/70">
       <div className="flex h-15 max-w-7xl mx-auto items-center">
@@ -50,10 +53,11 @@ function Navbar() {
               placeholder="Search medicines..."
             />
           </div>
-          <div className="flex items-center px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full cursor-pointer  gap-1">
+          <Link to="/cart" className="relative flex items-center px-3 py-2 hover:bg-green-900/20 hover:opacity-80 hover:rounded-full cursor-pointer gap-1">
             <ShoppingCart size={20} className="fill-green-800 text-green-900"/>
             <h3 className="font-medium text-md">Cart</h3>
-          </div>
+            {itemCount > 0 && <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-green-950 px-1 text-[10px] font-bold text-white">{itemCount}</span>}
+          </Link>
           <div className="relative">
             {/* Account */}
             <div

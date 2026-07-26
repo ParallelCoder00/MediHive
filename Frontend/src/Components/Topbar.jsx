@@ -1,4 +1,3 @@
-import React from 'react'
 import { Truck } from 'lucide-react';
 import { Users } from 'lucide-react';
 import { PhoneForwarded } from 'lucide-react'
